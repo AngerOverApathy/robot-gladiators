@@ -4,15 +4,13 @@ var playerAttack = 10;
 var playerMoney = 10;
 
 var enemyNames = ['Roborto', 'Amy Android', 'Robo Trumble'];
-var enemyHealth = 50;
-var enemyAttack = 12;
+
 
 var randomNumber = function(min, max) {
   var value = Math.floor(Math.random() * (max-min+1) + min);
 
   return value;
 };
-
 // fight function (now with parameter for enemy's name)
 var fight = function(enemyName) {
   while (playerHealth > 0 && enemyHealth > 0) {
