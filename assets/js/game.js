@@ -10,6 +10,7 @@ var enemyAttack = 12;
 var randomNumber = function(min, max) {
   var value = Math.floor(Math.random() * (max-min+1) + min);
 
+  return value;
 };
 // fight function (now with parameter for enemy's name)
 var fight = function(enemyName) {
