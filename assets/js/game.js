@@ -24,7 +24,12 @@ var fight = function(enemyName) {
       var confirmSkip = window.confirm("Are you sure you'd like to quit?");
 
       // if yes (true), leave fight
-  
+      if (confirmSkip) {
+        window.alert(playerName + ' has decided to skip this fight. Goodbye!');
+        // subtract money from playerMoney for skipping
+        playerMoney = Math.max(0, playerMoney - 10);
+        console.log("playerMoney", playerMoney)
+        break;
       }
     }
 
